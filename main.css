@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; color: #ffffff87; }
+.attribution a { color: rgb(233, 224, 224); text-decoration: none;}
+
+/* Code Start from here */
+
+body {
+  background-color: rgb(33, 32, 32);
+  height: 100vh;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+#social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background-color: rgba(40, 40, 40, 0.9); /* Background for visibility */
+  border-radius: 15px; /* Optional rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  padding: 0 20px; 
+  max-width: 500px; 
+  margin: auto; 
+}
+
+.social-img img {
+  border-radius: 50%;
+  margin-bottom: 25px; 
+  margin-top: 20px;
+}
+
+.social-img-content {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.social-img-content h2 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(224, 224, 224);
+}
+
+.social-img-content p {
+  margin-bottom: 22px;
+  color: rgb(178, 236, 17);
+  font-weight: 650;
+  font-size: 18px;
+}
+
+.social-img-content span {
+  font-size: 15px;
+}
+
+#social-links-container {
+  color: white;
+  /* box-shadow: 2px 2px 2px white; */
+  transform: scale(1.2);
+  padding: 20px;
+  margin: 20px;
+}
+
+.social-links-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-links-content h4 {
+  background-color: rgba(55, 54, 54, 0.974);
+  padding: 6px 80px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+
+.social-links-content h4:hover {
+  background-color: rgba(255, 255, 0, 0.862);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #social-container {
+  height: auto;
+   max-width: 100%;
+   padding: 20px;
+  }
+  .social-img-content {
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px;
+  }
+  #social-links-container {
+    transform: scale(1);
+    margin: 10px 0px;
+  }
+  #social-links-container h4 {
+    padding: 12px;
+  }
+  .social-img img {
+    width: 120px;
+  }
+  .social-img-content h2 {
+    font-size: 22px;
+  }
+  .social-img-content p {
+    font-size: 18px;
+  }
+  .social-img-content span {
+    font-size: 15px;
+  }
+    
+}
